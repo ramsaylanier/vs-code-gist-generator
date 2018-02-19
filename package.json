@@ -2,8 +2,10 @@
     "name": "gist-generator",
     "displayName": "Gist Generator",
     "description": "Create Gists of highlighted code",
-    "version": "0.0.1",
-    "publisher": "Ramsay",
+    "version": "1.0.0",
+    "publisher": "Ramsay Lanier",
+    "repository": "https://github.com/ramsaylanier/vs-code-gist-generator",
+    "license": "SEE IN LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.20.0"
     },

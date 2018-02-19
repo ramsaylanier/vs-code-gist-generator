@@ -1,0 +1,45 @@
+{
+    "name": "gist-generator",
+    "displayName": "Gist Generator",
+    "description": "Create Gists of highlighted code",
+    "version": "0.0.1",
+    "publisher": "Ramsay",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.createGist"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.createGist",
+                "title": "Create Gist"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "extension.createGist",
+                    "group": "YourGroup@1"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "eslint": "^4.11.0",
+        "request-promise": "^4.2.2",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    }
+}
